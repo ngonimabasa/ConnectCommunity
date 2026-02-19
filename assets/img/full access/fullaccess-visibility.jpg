@@ -1,0 +1,5 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#F0FFF0"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="36" fill="#0066b3" text-anchor="middle" dominant-baseline="middle">Brand Visibility Platform</text>
+  <text x="50%" y="60%" font-family="Arial, sans-serif" font-size="20" fill="#6c757d" text-anchor="middle" dominant-baseline="middle">800 x 500</text>
+</svg>
