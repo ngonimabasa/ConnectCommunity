@@ -55,7 +55,10 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <img src="assets/img/logo.png" alt="Connect Community Logo" width="592" height="408" loading="eager" fetchpriority="high">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/logo-240.webp 2x, assets/img/logo-120.webp 1x">
+                        <img src="assets/img/logo-240.png" srcset="assets/img/logo-240.png 2x, assets/img/logo-120.png 1x" alt="Connect Community Logo" width="120" height="83" loading="eager" fetchpriority="high">
+                    </picture>
                 </div>
                 <button class="mobile-toggle" id="mobileToggle">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +99,7 @@
         <div class="hero-slider">
             <!-- Slide 1 -->
             <div class="hero-slide active">
-                <div class="hero-background" style="background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), -webkit-image-set(url('assets/img/hero section/Slide1.webp') 1x) no-repeat center/cover; background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), image-set(url('assets/img/hero section/Slide1.webp') type('image/webp'), url('assets/img/hero section/Slide1.jpg') type('image/jpeg')); background-size: cover; background-position: center;"></div>
+                <div class="hero-background"></div>
                 <div class="hero-wrapper">
                     <div class="container">
                         <div class="hero-content-center">
@@ -114,7 +117,7 @@
 
             <!-- Slide 2 -->
             <div class="hero-slide">
-                <div class="hero-background" style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), -webkit-image-set(url('assets/img/hero section/slide2.webp') 1x) no-repeat center/cover; background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), image-set(url('assets/img/hero section/slide2.webp') type('image/webp'), url('assets/img/hero section/slide2.jpg') type('image/jpeg')); background-size: cover; background-position: center;"></div>
+                <div class="hero-background"></div>
                 <div class="hero-wrapper">
                     <div class="container">
                         <div class="hero-content-center">
@@ -132,7 +135,7 @@
 
             <!-- Slide 3 -->
             <div class="hero-slide">
-                <div class="hero-background" style="background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(255, 107, 53, 0.3) 100%), -webkit-image-set(url('assets/img/hero section/slide3.webp') 1x) no-repeat center/cover; background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(255, 107, 53, 0.3) 100%), image-set(url('assets/img/hero section/slide3.webp') type('image/webp'), url('assets/img/hero section/slide3.jpg') type('image/jpeg')); background-size: cover; background-position: center;"></div>
+                <div class="hero-background"></div>
                 <div class="hero-wrapper">
                     <div class="container">
                         <div class="hero-content-center">
@@ -176,22 +179,34 @@
                 <p style="font-size: 16px; font-weight: 600; color: #475569; margin: 0; letter-spacing: 0.5px;">Operating Across:</p>
                 
                 <div style="display: flex; align-items: center; gap: 8px;">
-                    <img src="assets/img/flags/zimbabwe.png" alt="Zimbabwe" class="flag-flying" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/flags/zimbabwe-64.webp">
+                        <img src="assets/img/flags/zimbabwe-64.png" alt="Zimbabwe" class="flag-flying" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    </picture>
                     <span style="font-size: 15px; font-weight: 500; color: #334155;">Zimbabwe</span>
                 </div>
                 
                 <div style="display: flex; align-items: center; gap: 8px;">
-                    <img src="assets/img/flags/botswana.png" alt="Botswana" class="flag-flying" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/flags/botswana-64.webp">
+                        <img src="assets/img/flags/botswana-64.png" alt="Botswana" class="flag-flying" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    </picture>
                     <span style="font-size: 15px; font-weight: 500; color: #334155;">Botswana</span>
                 </div>
                 
                 <div style="display: flex; align-items: center; gap: 8px;">
-                    <img src="assets/img/flags/zambia.png" alt="Zambia" class="flag-flying" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/flags/zambia-64.webp">
+                        <img src="assets/img/flags/zambia-64.png" alt="Zambia" class="flag-flying" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    </picture>
                     <span style="font-size: 15px; font-weight: 500; color: #334155;">Zambia</span>
                 </div>
                 
                 <div style="display: flex; align-items: center; gap: 8px;">
-                    <img src="assets/img/flags/southafrica.png" alt="South Africa" class="flag-flying" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <picture>
+                        <source type="image/webp" srcset="assets/img/flags/southafrica-64.webp">
+                        <img src="assets/img/flags/southafrica-64.png" alt="South Africa" class="flag-flying" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    </picture>
                     <span style="font-size: 15px; font-weight: 500; color: #334155;">South Africa</span>
                 </div>
             </div>
@@ -208,8 +223,8 @@
                 <div class="feature-card">
                     <div class="feature-card-image">
                         <picture>
-                            <source type="image/webp" srcset="assets/img/feature1-400.webp 400w, assets/img/feature1-600.webp 600w, assets/img/feature1.webp 800w" sizes="(max-width: 768px) 100vw, 400px">
-                            <img src="assets/img/feature1.jpg" srcset="assets/img/feature1-400.jpg 400w, assets/img/feature1-600.jpg 600w, assets/img/feature1.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" alt="Collaborative Community" width="800" height="415" loading="lazy">
+                            <source type="image/webp" srcset="assets/img/feature1-400.webp 400w, assets/img/feature1-600.webp 600w, assets/img/feature1.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px">
+                            <img src="assets/img/feature1.jpg" srcset="assets/img/feature1-400.jpg 400w, assets/img/feature1-600.jpg 600w, assets/img/feature1.jpg 800w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px" alt="Collaborative Community" width="800" height="415" loading="lazy">
                         </picture>
                     </div>
                     <div class="feature-card-content">
@@ -225,8 +240,8 @@
                 <div class="feature-card">
                     <div class="feature-card-image">
                         <picture>
-                            <source type="image/webp" srcset="assets/img/feature2-400.webp 400w, assets/img/feature2-600.webp 600w, assets/img/feature2.webp 1107w" sizes="(max-width: 768px) 100vw, 400px">
-                            <img src="assets/img/feature2.jpg" srcset="assets/img/feature2-400.jpg 400w, assets/img/feature2-600.jpg 600w, assets/img/feature2.jpg 1107w" sizes="(max-width: 768px) 100vw, 400px" alt="Certified Excellence" width="1107" height="604" loading="lazy">
+                            <source type="image/webp" srcset="assets/img/feature2-400.webp 400w, assets/img/feature2-600.webp 600w, assets/img/feature2.webp 1107w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px">
+                            <img src="assets/img/feature2.jpg" srcset="assets/img/feature2-400.jpg 400w, assets/img/feature2-600.jpg 600w, assets/img/feature2.jpg 1107w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px" alt="Certified Excellence" width="1107" height="604" loading="lazy">
                         </picture>
                     </div>
                     <div class="feature-card-content">
@@ -242,8 +257,8 @@
                 <div class="feature-card">
                     <div class="feature-card-image">
                         <picture>
-                            <source type="image/webp" srcset="assets/img/feature3-400.webp 400w, assets/img/feature3-600.webp 600w, assets/img/feature3.webp 800w" sizes="(max-width: 768px) 100vw, 400px">
-                            <img src="assets/img/feature3.jpg" srcset="assets/img/feature3-400.jpg 400w, assets/img/feature3-600.jpg 600w, assets/img/feature3.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" alt="Industry Expertise" width="800" height="659" loading="lazy">
+                            <source type="image/webp" srcset="assets/img/feature3-400.webp 400w, assets/img/feature3-600.webp 600w, assets/img/feature3.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px">
+                            <img src="assets/img/feature3.jpg" srcset="assets/img/feature3-400.jpg 400w, assets/img/feature3-600.jpg 600w, assets/img/feature3.jpg 800w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px" alt="Industry Expertise" width="800" height="659" loading="lazy">
                         </picture>
                     </div>
                     <div class="feature-card-content">
@@ -318,7 +333,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-logo-section">
-                <img src="assets/img/logo.png" alt="Connect Community Logo" width="592" height="408" loading="lazy" class="footer-logo">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/logo-240.webp 2x, assets/img/logo-120.webp 1x">
+                    <img src="assets/img/logo-240.png" srcset="assets/img/logo-240.png 2x, assets/img/logo-120.png 1x" alt="Connect Community Logo" width="120" height="83" loading="lazy" class="footer-logo">
+                </picture>
             </div>
             
             <div class="footer-main">
@@ -327,19 +345,31 @@
                         <p class="footer-company">Connect Community</p>
                         <p style="display: grid; grid-template-columns: repeat(2, auto); gap: 10px 15px; justify-content: start;">
                             <span style="display: flex; align-items: center; gap: 6px;">
-                                <img src="assets/img/flags/zimbabwe.png" alt="Zimbabwe" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/img/flags/zimbabwe-64.webp">
+                                    <img src="assets/img/flags/zimbabwe-64.png" alt="Zimbabwe" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                </picture>
                                 <span>Zimbabwe</span>
                             </span>
                             <span style="display: flex; align-items: center; gap: 6px;">
-                                <img src="assets/img/flags/botswana.png" alt="Botswana" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/img/flags/botswana-64.webp">
+                                    <img src="assets/img/flags/botswana-64.png" alt="Botswana" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                </picture>
                                 <span>Botswana</span>
                             </span>
                             <span style="display: flex; align-items: center; gap: 6px;">
-                                <img src="assets/img/flags/zambia.png" alt="Zambia" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/img/flags/zambia-64.webp">
+                                    <img src="assets/img/flags/zambia-64.png" alt="Zambia" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                </picture>
                                 <span>Zambia</span>
                             </span>
                             <span style="display: flex; align-items: center; gap: 6px;">
-                                <img src="assets/img/flags/southafrica.png" alt="South Africa" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/img/flags/southafrica-64.webp">
+                                    <img src="assets/img/flags/southafrica-64.png" alt="South Africa" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                </picture>
                                 <span>South Africa</span>
                             </span>
                         </p>
