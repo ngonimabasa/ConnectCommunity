@@ -567,3 +567,26 @@ if (searchInput) {
         }
     });
 }
+
+// ========================================
+// EMAIL LINK HANDLER - Open in Browser (Gmail)
+// ========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Get all mailto links
+    const mailtoLinks = document.querySelectorAll('a[href^="mailto:"]');
+    
+    mailtoLinks.forEach(link => {
+        // Store original href
+        const originalHref = link.getAttribute('href');
+        const email = originalHref.replace('mailto:', '').split('?')[0];
+        
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Open Gmail compose in new tab
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+            window.open(gmailUrl, '_blank');
+        });
+    });
+});

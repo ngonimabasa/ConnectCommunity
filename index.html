@@ -10,6 +10,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        @keyframes flagWave {
+            0%, 100% {
+                transform: rotateY(0deg) translateY(0px);
+            }
+            25% {
+                transform: rotateY(-15deg) translateY(-2px);
+            }
+            50% {
+                transform: rotateY(0deg) translateY(0px);
+            }
+            75% {
+                transform: rotateY(15deg) translateY(-2px);
+            }
+        }
+        
+        .flag-flying {
+            animation: flagWave 2s ease-in-out infinite;
+            transform-style: preserve-3d;
+        }
+        
+        .flag-flying:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .flag-flying:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        
+        .flag-flying:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        
+        .flag-flying:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+    </style>
 </head>
 <body class="homepage">
     <!-- Navigation -->
@@ -131,6 +168,35 @@
         </div>
     </section>
 
+    <!-- Regional Coverage Banner -->
+    <section style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 30px 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+        <div class="container">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 50px; flex-wrap: wrap;">
+                <p style="font-size: 16px; font-weight: 600; color: #475569; margin: 0; letter-spacing: 0.5px;">Operating Across:</p>
+                
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <img src="assets/img/flags/zimbabwe.png" alt="Zimbabwe" class="flag-flying" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <span style="font-size: 15px; font-weight: 500; color: #334155;">Zimbabwe</span>
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <img src="assets/img/flags/botswana.png" alt="Botswana" class="flag-flying" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <span style="font-size: 15px; font-weight: 500; color: #334155;">Botswana</span>
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <img src="assets/img/flags/zambia.png" alt="Zambia" class="flag-flying" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <span style="font-size: 15px; font-weight: 500; color: #334155;">Zambia</span>
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <img src="assets/img/flags/southafrica.png" alt="South Africa" class="flag-flying" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                    <span style="font-size: 15px; font-weight: 500; color: #334155;">South Africa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Our Impact Section -->
     <section class="about-content-section">
         <div class="container">
@@ -197,6 +263,40 @@
         </div>
     </section>
 
+    <!-- Partnership Section -->
+    <section style="background: #ffffff; padding: 50px 0; border-top: 1px solid #e2e8f0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 35px;">
+                <p style="font-size: 14px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 15px;">Brought To You By</p>
+                <h2 style="font-size: 28px; font-weight: 700; color: #1e293b; font-family: var(--font-headings); margin: 0;">A Strategic Partnership</h2>
+                <p style="font-size: 16px; color: #64748b; margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto;">Connect Community is a joint initiative combining expertise in customer management and professional development</p>
+            </div>
+            
+            <div style="display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; padding: 30px 0;">
+                
+                <!-- CorePay Logo -->
+                <div style="text-align: center; flex: 0 1 250px;">
+                    <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; transition: transform 0.3s ease, box-shadow 0.3s ease; min-height: 140px; display: flex; align-items: center; justify-content: center;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
+                        <img src="assets/img/corepay-logo.png" alt="CorePay" style="max-width: 180px; max-height: 80px; width: auto; height: auto; object-fit: contain;">
+                    </div>
+                    <p style="font-size: 14px; color: #64748b; margin-top: 15px; font-weight: 500;">Payroll Solutions Expert</p>
+                </div>
+
+                <!-- Plus Sign -->
+                <div style="font-size: 36px; font-weight: 300; color: #0066b3; margin: 0 10px;">+</div>
+
+                <!-- Call Connect Logo -->
+                <div style="text-align: center; flex: 0 1 250px;">
+                    <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; transition: transform 0.3s ease, box-shadow 0.3s ease; min-height: 140px; display: flex; align-items: center; justify-content: center;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
+                        <img src="assets/img/callconnect-logo.png" alt="Call Connect" style="max-width: 180px; max-height: 80px; width: auto; height: auto; object-fit: contain;">
+                    </div>
+                    <p style="font-size: 14px; color: #64748b; margin-top: 15px; font-weight: 500;">Customer Service Leader</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -215,12 +315,30 @@
                 <div class="footer-left">
                     <div class="footer-info">
                         <p class="footer-company">Connect Community</p>
-                        <p>123 Business Avenue</p>
-                        <p>Gaborone, Botswana</p>
-                        <p><a href="mailto:info@connectcommunity.co.za">info@connectcommunity.co.za</a></p>
-                        <p>+27 11 123 4567</p>
+                        <p style="display: grid; grid-template-columns: repeat(2, auto); gap: 10px 15px; justify-content: start;">
+                            <span style="display: flex; align-items: center; gap: 6px;">
+                                <img src="assets/img/flags/zimbabwe.png" alt="Zimbabwe" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                <span>Zimbabwe</span>
+                            </span>
+                            <span style="display: flex; align-items: center; gap: 6px;">
+                                <img src="assets/img/flags/botswana.png" alt="Botswana" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                <span>Botswana</span>
+                            </span>
+                            <span style="display: flex; align-items: center; gap: 6px;">
+                                <img src="assets/img/flags/zambia.png" alt="Zambia" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                <span>Zambia</span>
+                            </span>
+                            <span style="display: flex; align-items: center; gap: 6px;">
+                                <img src="assets/img/flags/southafrica.png" alt="South Africa" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                                <span>South Africa</span>
+                            </span>
+                        </p>
+                        <p>Tel: <a href="tel:08677183384" style="color: inherit; text-decoration: underline;">08677183384</a>, <a href="tel:08677184916" style="color: inherit; text-decoration: underline;">08677184916</a></p>
+                        <p>Cel: <a href="tel:0772957563" style="color: inherit; text-decoration: underline;">0772957563</a></p>
+                        <p><a href="mailto:sales@corepay.co.zw" style="color: inherit; text-decoration: underline;">sales@corepay.co.zw</a></p>
+                        <p><a href="mailto:info@callconnect.co.zw" style="color: inherit; text-decoration: underline;">info@callconnect.co.zw</a></p>
                         <div class="footer-hours">
-                            <p><strong>Monday - Friday</strong> 09:00 - 17:00</p>
+                            <p><strong>Monday - Friday</strong> 08:00 - 17:00</p>
                             <p><strong>Saturday - Sunday</strong> Closed</p>
                         </div>
                     </div>
@@ -240,7 +358,7 @@
                         <h4>Membership</h4>
                         <ul>
                             <li><a href="joinus.html">Join Us</a></li>
-                            <li><a href="#">Member Benefits</a></li>
+                            <li><a href="fullaccess.html">Benefits</a></li>
                             <li><a href="#">Pricing</a></li>
                         </ul>
                     </div>
@@ -251,15 +369,6 @@
                             <li><a href="getintouch.html">Contact</a></li>
                             <li><a href="#">Help Center</a></li>
                             <li><a href="#">FAQs</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-col">
-                        <h4>Connect</h4>
-                        <ul>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Newsletter</a></li>
                         </ul>
                     </div>
                 </div>
