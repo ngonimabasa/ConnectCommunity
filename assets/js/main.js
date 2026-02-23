@@ -22,6 +22,36 @@ navLinks.forEach(link => {
     });
 });
 
+// Handle responsive navigation on window resize and orientation change
+function handleNavResize() {
+    const windowWidth = window.innerWidth;
+    
+    // If screen is wider than mobile breakpoint (968px), ensure mobile menu is closed
+    if (windowWidth > 968) {
+        if (mobileToggle) mobileToggle.classList.remove('active');
+        if (navContent) navContent.classList.remove('active');
+    }
+}
+
+// Add resize event listener with debounce for better performance
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        handleNavResize();
+    }, 250);
+});
+
+// Handle orientation change (for mobile devices)
+window.addEventListener('orientationchange', () => {
+    setTimeout(() => {
+        handleNavResize();
+    }, 100);
+});
+
+// Initialize on load
+handleNavResize();
+
 // ========================================
 // HERO SLIDER FUNCTIONALITY
 // ========================================
