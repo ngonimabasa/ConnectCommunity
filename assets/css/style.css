@@ -896,66 +896,45 @@ ul {
 /* Responsive Hero Background Images */
 /* Slide 1 - Blue Gradient */
 .hero-slide:nth-child(1) .hero-background {
-    background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
-                -webkit-image-set(url('../img/hero section/Slide1.webp') 1x);
-    background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
-                image-set(url('../img/hero section/Slide1.webp') type('image/webp'), 
-                         url('../img/hero section/Slide1.jpg') type('image/jpeg'));
+    background-image: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
+                      url('../img/hero section/Slide1.webp');
 }
 
 /* Slide 2 - Orange Gradient */
 .hero-slide:nth-child(2) .hero-background {
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
-                -webkit-image-set(url('../img/hero section/slide2.webp') 1x);
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
-                image-set(url('../img/hero section/slide2.webp') type('image/webp'), 
-                         url('../img/hero section/slide2.jpg') type('image/jpeg'));
+    background-image: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
+                      url('../img/hero section/slide2.webp');
 }
 
 /* Slide 3 - Mixed Gradient */
 .hero-slide:nth-child(3) .hero-background {
-    background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(255, 107, 53, 0.3) 100%), 
-                -webkit-image-set(url('../img/hero section/slide3.webp') 1x);
-    background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(255, 107, 53, 0.3) 100%), 
-                image-set(url('../img/hero section/slide3.webp') type('image/webp'), 
-                         url('../img/hero section/slide3.jpg') type('image/jpeg'));
+    background-image: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(255, 107, 53, 0.3) 100%), 
+                      url('../img/hero section/slide3.webp');
 }
 
 /* Tablet: Use 1280px variants */
 @media (max-width: 1279px) {
     .hero-slide:nth-child(1) .hero-background {
-        background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
-                    -webkit-image-set(url('../img/hero section/Slide1-1280.webp') 1x);
-        background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
-                    image-set(url('../img/hero section/Slide1-1280.webp') type('image/webp'), 
-                             url('../img/hero section/Slide1-1280.jpg') type('image/jpeg'));
+        background-image: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
+                          url('../img/hero section/Slide1-1280.webp');
     }
     
     .hero-slide:nth-child(2) .hero-background {
-        background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
-                    -webkit-image-set(url('../img/hero section/slide2-1280.webp') 1x);
-        background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
-                    image-set(url('../img/hero section/slide2-1280.webp') type('image/webp'), 
-                             url('../img/hero section/slide2-1280.jpg') type('image/jpeg'));
+        background-image: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
+                          url('../img/hero section/slide2-1280.webp');
     }
 }
 
 /* Mobile: Use 640px variants */
 @media (max-width: 768px) {
     .hero-slide:nth-child(1) .hero-background {
-        background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
-                    -webkit-image-set(url('../img/hero section/Slide1-640.webp') 1x);
-        background: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
-                    image-set(url('../img/hero section/Slide1-640.webp') type('image/webp'), 
-                             url('../img/hero section/Slide1-640.jpg') type('image/jpeg'));
+        background-image: linear-gradient(135deg, rgba(0, 102, 179, 0.3) 0%, rgba(0, 160, 220, 0.3) 100%), 
+                          url('../img/hero section/Slide1-640.webp');
     }
     
     .hero-slide:nth-child(2) .hero-background {
-        background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
-                    -webkit-image-set(url('../img/hero section/slide2-640.webp') 1x);
-        background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
-                    image-set(url('../img/hero section/slide2-640.webp') type('image/webp'), 
-                             url('../img/hero section/slide2-640.jpg') type('image/jpeg'));
+        background-image: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(255, 133, 85, 0.3) 100%), 
+                          url('../img/hero section/slide2-640.webp');
     }
 }
 
