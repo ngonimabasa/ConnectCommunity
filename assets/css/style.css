@@ -2459,6 +2459,7 @@ ul {
         transform: translateX(-50%);
         width: 90%;
         max-width: 420px;
+        max-height: calc(100vh - 100px); /* Prevent overflow off screen */
         background: white;
         flex-direction: column;
         padding: 20px;
@@ -2467,6 +2468,27 @@ ul {
         gap: 10px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         z-index: 1000;
+        overflow-y: auto; /* Enable vertical scrolling */
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+    
+    /* Smooth scrolling for mobile menu */
+    .nav-content::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+    .nav-content::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    
+    .nav-content::-webkit-scrollbar-thumb {
+        background: #0066b3;
+        border-radius: 10px;
+    }
+    
+    .nav-content::-webkit-scrollbar-thumb:hover {
+        background: #004a80;
     }
     
     .nav-content.active {
