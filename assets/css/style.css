@@ -2459,7 +2459,7 @@ ul {
         transform: translateX(-50%);
         width: 90%;
         max-width: 420px;
-        max-height: 70vh; /* Smaller height to ensure scrolling */
+        max-height: 65vh; /* Force smaller height for scrolling */
         background: white;
         flex-direction: column;
         padding: 0;
@@ -2467,9 +2467,9 @@ ul {
         border-radius: 12px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        overflow-y: scroll !important; /* Force scrolling */
+        overflow-y: scroll !important; /* Force scrolling always */
         overflow-x: hidden;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        -webkit-overflow-scrolling: touch;
     }
     
     /* Smooth scrolling for mobile menu */
@@ -2505,7 +2505,7 @@ ul {
         gap: 8px;
         width: 100%;
         padding: 20px;
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
 
     .nav-menu .nav-link {
@@ -2514,6 +2514,7 @@ ul {
         border-radius: 8px;
         font-size: 15px;
         color: #1a1a1a;
+        display: block;
     }
     
     .nav-menu .nav-link:hover {
@@ -2525,24 +2526,27 @@ ul {
         display: none !important;
     }
 
-    /* Show mobile action buttons inside menu - CENTERED */
+    /* Mobile menu action buttons container (the li element) */
     .nav-menu-actions {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         align-items: center; /* Center the buttons */
-        gap: 10px;
+        gap: 12px;
         width: 100%;
-        padding: 20px;
-        margin-top: 12px;
+        padding: 16px 0 0 0; /* Only top padding */
+        margin-top: 8px;
         border-top: 1px solid #e5e7eb;
+        list-style: none;
     }
     
+    /* The actual button links */
     .nav-menu-actions .btn {
-        width: 85%; /* Slightly smaller than full width for better look */
-        max-width: 280px; /* Max width for larger screens */
-        padding: 14px 20px !important;
+        width: 90% !important; /* Centered with 90% width */
+        max-width: 300px !important;
+        padding: 14px 24px !important;
         font-size: 14px !important;
-        text-align: center;
+        text-align: center !important;
+        display: block !important;
     }
 
     .content-grid {
