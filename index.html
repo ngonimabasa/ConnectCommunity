@@ -6,48 +6,11 @@
     <meta name="description" content="Connect Community - Customer Management and Continuing Professional Development Business Community">
     <title>Connect Community - Customer Management & CPD</title>
     <link rel="icon" type="image/png" href="assets/img/logo.png">
-    <link rel="stylesheet" href="assets/css/style.css?v=39">
+    <link rel="stylesheet" href="assets/css/style.css?v=41">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="assets/img/hero section/slide1.jpg" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        @keyframes flagWave {
-            0%, 100% {
-                transform: rotateY(0deg) translateY(0px);
-            }
-            25% {
-                transform: rotateY(-15deg) translateY(-2px);
-            }
-            50% {
-                transform: rotateY(0deg) translateY(0px);
-            }
-            75% {
-                transform: rotateY(15deg) translateY(-2px);
-            }
-        }
-        
-        .flag-flying {
-            animation: flagWave 2s ease-in-out infinite;
-            transform-style: preserve-3d;
-        }
-        
-        .flag-flying:nth-child(1) {
-            animation-delay: 0s;
-        }
-        
-        .flag-flying:nth-child(2) {
-            animation-delay: 0.3s;
-        }
-        
-        .flag-flying:nth-child(3) {
-            animation-delay: 0.6s;
-        }
-        
-        .flag-flying:nth-child(4) {
-            animation-delay: 0.9s;
-        }
-    </style>
 </head>
 <body class="homepage">
     <!-- Navigation -->
@@ -173,41 +136,41 @@
     </section>
 
     <!-- Regional Coverage Banner -->
-    <section style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 30px 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+    <section class="regional-coverage-banner">
         <div class="container">
-            <div style="display: flex; align-items: center; justify-content: center; gap: 50px; flex-wrap: wrap;">
-                <p style="font-size: 16px; font-weight: 600; color: #475569; margin: 0; letter-spacing: 0.5px;">Operating Across:</p>
+            <div class="flags-container">
+                <p class="flags-label">Operating Across:</p>
                 
-                <div style="display: flex; align-items: center; gap: 8px;">
+                <div class="flag-item">
                     <picture>
                         <source type="image/webp" srcset="assets/img/flags/zimbabwe-64.webp">
-                        <img src="assets/img/flags/zimbabwe-64.png" alt="Zimbabwe" class="flag-flying" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                        <img src="assets/img/flags/zimbabwe-64.png" alt="Zimbabwe" class="flag-flying" width="32" height="32" loading="lazy">
                     </picture>
-                    <span style="font-size: 15px; font-weight: 500; color: #334155;">Zimbabwe</span>
+                    <span>Zimbabwe</span>
                 </div>
                 
-                <div style="display: flex; align-items: center; gap: 8px;">
+                <div class="flag-item">
                     <picture>
                         <source type="image/webp" srcset="assets/img/flags/botswana-64.webp">
-                        <img src="assets/img/flags/botswana-64.png" alt="Botswana" class="flag-flying" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                        <img src="assets/img/flags/botswana-64.png" alt="Botswana" class="flag-flying" width="32" height="32" loading="lazy">
                     </picture>
-                    <span style="font-size: 15px; font-weight: 500; color: #334155;">Botswana</span>
+                    <span>Botswana</span>
                 </div>
                 
-                <div style="display: flex; align-items: center; gap: 8px;">
+                <div class="flag-item">
                     <picture>
                         <source type="image/webp" srcset="assets/img/flags/zambia-64.webp">
-                        <img src="assets/img/flags/zambia-64.png" alt="Zambia" class="flag-flying" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                        <img src="assets/img/flags/zambia-64.png" alt="Zambia" class="flag-flying" width="32" height="32" loading="lazy">
                     </picture>
-                    <span style="font-size: 15px; font-weight: 500; color: #334155;">Zambia</span>
+                    <span>Zambia</span>
                 </div>
                 
-                <div style="display: flex; align-items: center; gap: 8px;">
+                <div class="flag-item">
                     <picture>
                         <source type="image/webp" srcset="assets/img/flags/southafrica-64.webp">
-                        <img src="assets/img/flags/southafrica-64.png" alt="South Africa" class="flag-flying" width="32" height="32" loading="lazy" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                        <img src="assets/img/flags/southafrica-64.png" alt="South Africa" class="flag-flying" width="32" height="32" loading="lazy">
                     </picture>
-                    <span style="font-size: 15px; font-weight: 500; color: #334155;">South Africa</span>
+                    <span>South Africa</span>
                 </div>
             </div>
         </div>
