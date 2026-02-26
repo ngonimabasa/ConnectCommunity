@@ -4998,8 +4998,11 @@ ul {
     background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/memberHero.jpg');
 }
 
-/* Members Horizontal Scroll Styles */
-.members-scroll-container {
+/* ================================
+   Infinite Logo Marquee Styles
+================================ */
+
+.members-marquee {
     width: 100%;
     overflow: hidden;
     margin-top: 60px;
@@ -5008,61 +5011,51 @@ ul {
     background: transparent;
 }
 
-.members-scroll-track {
+.members-track {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 50px;
-    animation: scroll-horizontal 30s linear infinite;
     width: max-content;
-    align-items: center;
+    animation: marquee 25s linear infinite;
 }
 
-.members-scroll-track:hover {
+.members-track:hover {
     animation-play-state: paused;
 }
 
-.member-card {
+.member-item {
     flex: 0 0 auto;
     background: #ffffff;
     border-radius: 20px;
-    padding: 40px 50px;
+    padding: 40px 60px;
+    margin: 0 25px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 180px;
+    min-height: 180px;
 }
 
-.member-card:hover {
+.member-item:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 20px 40px rgba(0, 102, 179, 0.2);
 }
 
-.member-logo-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .member-logo {
-    max-width: 220px;
-    max-height: 100px;
+    max-width: 250px;
+    max-height: 120px;
     width: auto;
     height: auto;
     object-fit: contain;
+    display: block;
     transition: transform 0.3s ease;
 }
 
-.member-card:hover .member-logo {
+.member-item:hover .member-logo {
     transform: scale(1.1);
 }
 
-@keyframes scroll-horizontal {
+/* Keyframe animation for seamless infinite scroll */
+@keyframes marquee {
     0% {
         transform: translateX(0);
     }
@@ -5072,39 +5065,60 @@ ul {
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+    .members-track {
+        animation-duration: 20s;
+    }
+    
+    .member-item {
+        padding: 35px 50px;
+        margin: 0 20px;
+        min-height: 160px;
+    }
+    
+    .member-logo {
+        max-width: 220px;
+        max-height: 110px;
+    }
+}
+
 @media (max-width: 768px) {
-    .member-card {
+    .members-marquee {
+        margin-top: 40px;
+        padding: 30px 0;
+    }
+    
+    .members-track {
+        animation-duration: 18s;
+    }
+    
+    .member-item {
         padding: 30px 40px;
-        width: 250px;
-        height: 150px;
+        margin: 0 15px;
+        min-height: 140px;
     }
     
     .member-logo {
         max-width: 180px;
-        max-height: 80px;
-    }
-    
-    .members-scroll-track {
-        gap: 30px;
-        animation-duration: 25s;
+        max-height: 90px;
     }
 }
 
 @media (max-width: 480px) {
-    .member-card {
-        padding: 25px 30px;
-        width: 200px;
-        height: 130px;
+    .members-track {
+        animation-duration: 15s;
+    }
+    
+    .member-item {
+        padding: 25px 35px;
+        margin: 0 12px;
+        min-height: 120px;
+        border-radius: 15px;
     }
     
     .member-logo {
         max-width: 150px;
-        max-height: 70px;
-    }
-    
-    .members-scroll-track {
-        gap: 25px;
-        animation-duration: 20s;
+        max-height: 75px;
     }
 }
 
