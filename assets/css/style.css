@@ -4998,46 +4998,42 @@ ul {
     background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/memberHero.jpg');
 }
 
-/* Members Grid Styles */
-.members-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 50px;
+/* Members Horizontal Scroll Styles */
+.members-scroll-container {
+    width: 100%;
+    overflow: hidden;
     margin-top: 60px;
-    padding: 20px;
+    padding: 40px 0;
+    position: relative;
+}
+
+.members-scroll-track {
+    display: flex;
+    gap: 50px;
+    animation: scroll-horizontal 30s linear infinite;
+    width: fit-content;
+}
+
+.members-scroll-track:hover {
+    animation-play-state: paused;
 }
 
 .member-card {
+    flex-shrink: 0;
     background: #ffffff;
     border-radius: 20px;
-    padding: 40px;
+    padding: 40px 50px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: float 6s ease-in-out infinite;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 200px;
-}
-
-.member-card:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.member-card:nth-child(2) {
-    animation-delay: 1.5s;
-}
-
-.member-card:nth-child(3) {
-    animation-delay: 3s;
-}
-
-.member-card:nth-child(4) {
-    animation-delay: 4.5s;
+    min-width: 300px;
+    min-height: 180px;
 }
 
 .member-card:hover {
-    transform: translateY(-15px) scale(1.05);
+    transform: translateY(-10px) scale(1.05);
     box-shadow: 0 20px 40px rgba(0, 102, 179, 0.2);
 }
 
@@ -5049,8 +5045,8 @@ ul {
 }
 
 .member-logo {
-    max-width: 100%;
-    max-height: 120px;
+    max-width: 220px;
+    max-height: 100px;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -5061,36 +5057,49 @@ ul {
     transform: scale(1.1);
 }
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0px);
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
     }
-    50% {
-        transform: translateY(-20px);
+    100% {
+        transform: translateX(-50%);
     }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .members-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 30px;
-    }
-    
     .member-card {
-        padding: 30px;
-        min-height: 160px;
+        padding: 30px 40px;
+        min-width: 250px;
+        min-height: 150px;
     }
     
     .member-logo {
-        max-height: 100px;
+        max-width: 180px;
+        max-height: 80px;
+    }
+    
+    .members-scroll-track {
+        gap: 30px;
+        animation-duration: 25s;
     }
 }
 
 @media (max-width: 480px) {
-    .members-grid {
-        grid-template-columns: 1fr;
+    .member-card {
+        padding: 25px 30px;
+        min-width: 200px;
+        min-height: 130px;
+    }
+    
+    .member-logo {
+        max-width: 150px;
+        max-height: 70px;
+    }
+    
+    .members-scroll-track {
         gap: 25px;
+        animation-duration: 20s;
     }
 }
 
