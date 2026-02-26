@@ -1151,23 +1151,28 @@ ul {
 /* Responsive flags */
 @media (max-width: 968px) {
     .flags-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px 20px;
-        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        padding: 0 30px;
         align-items: center;
+        justify-items: center;
     }
     
     .flags-label {
         grid-column: 1 / -1;
         justify-self: center;
         margin-bottom: 10px;
+        text-align: center;
     }
     
     .flag-item {
-        width: 100%;
-        max-width: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+        width: auto;
         justify-content: center;
-        justify-self: center;
     }
 }
 
@@ -1177,31 +1182,38 @@ ul {
     }
     
     .flags-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px 15px;
-        padding: 0 15px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        padding: 0 20px;
         align-items: center;
+        justify-items: center;
     }
     
     .flags-label {
         font-size: 14px;
         grid-column: 1 / -1;
+        text-align: center;
     }
     
     .flag-item {
-        gap: 8px;
-        justify-content: center;
-        justify-self: center;
+        display: flex;
         align-items: center;
+        gap: 8px;
+        min-width: 0;
+        width: auto;
+        justify-content: center;
     }
     
     .flag-item img {
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
+        flex-shrink: 0;
     }
     
     .flag-item span {
-        font-size: 14px;
+        font-size: 13px;
+        white-space: nowrap;
     }
 }
 
