@@ -1153,25 +1153,23 @@ ul {
     .flags-container {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        gap: 16px 30px;
+        gap: 12px 20px;
         padding: 0 30px;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
     
     .flags-label {
         grid-column: 1 / -1;
-        justify-self: center;
-        margin-bottom: 10px;
-        text-align: center;
+        justify-self: start;
+        margin-bottom: 8px;
     }
     
     .flag-item {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
         min-width: 0;
-        justify-content: flex-start;
     }
 }
 
@@ -1183,29 +1181,27 @@ ul {
     .flags-container {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        gap: 14px 25px;
+        gap: 10px 15px;
         padding: 0 20px;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
     
     .flags-label {
         font-size: 14px;
         grid-column: 1 / -1;
-        text-align: center;
     }
     
     .flag-item {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 6px;
         min-width: 0;
-        justify-content: flex-start;
     }
     
     .flag-item img {
-        width: 26px;
-        height: 26px;
+        width: 32px;
+        height: 32px;
         flex-shrink: 0;
     }
     
