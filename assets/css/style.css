@@ -319,6 +319,15 @@ ul {
     position: relative;
 }
 
+.dropdown-trigger {
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown-trigger:hover {
+    color: var(--accent-gold);
+}
+
 .nav-dropdown:hover .dropdown-arrow {
     transform: rotate(180deg);
 }
@@ -3182,6 +3191,25 @@ ul {
 
     .nav-dropdown {
         width: 100%;
+    }
+
+    .dropdown-trigger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .dropdown-trigger::after {
+        content: '▼';
+        font-size: 10px;
+        margin-left: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-dropdown.active .dropdown-trigger::after {
+        transform: rotate(180deg);
     }
 
     .dropdown-menu {

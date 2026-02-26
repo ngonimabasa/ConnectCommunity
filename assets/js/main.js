@@ -14,11 +14,48 @@ if (mobileToggle && navContent) {
 }
 
 // Close mobile menu when clicking on a link
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-trigger)');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         if(mobileToggle) mobileToggle.classList.remove('active');
         if(navContent) navContent.classList.remove('active');
+    });
+});
+
+// Handle dropdown toggle on mobile
+const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
+dropdownTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+        // Only handle clicks on mobile
+        if (window.innerWidth <= 968) {
+            e.preventDefault();
+            e.stopPropagation();
+            const parentDropdown = trigger.closest('.nav-dropdown');
+            
+            // Close other dropdowns
+            document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                if (dropdown !== parentDropdown) {
+                    dropdown.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            parentDropdown.classList.toggle('active');
+        }
+    });
+});
+
+// Close dropdown when clicking dropdown menu items on mobile
+const dropdownLinks = document.querySelectorAll('.dropdown-menu a');
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 968) {
+            document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+            if(mobileToggle) mobileToggle.classList.remove('active');
+            if(navContent) navContent.classList.remove('active');
+        }
     });
 });
 
@@ -30,6 +67,10 @@ function handleNavResize() {
     if (windowWidth > 968) {
         if (mobileToggle) mobileToggle.classList.remove('active');
         if (navContent) navContent.classList.remove('active');
+        // Close all dropdowns
+        document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
     }
 }
 
