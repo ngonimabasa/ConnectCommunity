@@ -1151,20 +1151,21 @@ ul {
 /* Responsive flags */
 @media (max-width: 968px) {
     .flags-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 15px;
         padding: 0 20px;
     }
     
     .flags-label {
+        grid-column: 1 / -1;
         justify-self: center;
         margin-bottom: 10px;
     }
     
     .flag-item {
         width: 100%;
-        max-width: 200px;
-        justify-content: flex-start;
+        max-width: none;
+        justify-content: center;
     }
 }
 
@@ -1174,15 +1175,19 @@ ul {
     }
     
     .flags-container {
-        gap: 16px;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 12px;
+        padding: 0 15px;
     }
     
     .flags-label {
         font-size: 14px;
+        grid-column: 1 / -1;
     }
     
     .flag-item {
         gap: 10px;
+        justify-content: center;
     }
     
     .flag-item img {
