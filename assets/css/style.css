@@ -1155,14 +1155,14 @@ ul {
         grid-template-columns: repeat(2, auto) !important;
         gap: 12px 20px !important;
         padding: 0 30px !important;
-        justify-content: start !important;
+        justify-content: center !important;
         justify-items: start !important;
         align-items: center !important;
     }
     
     .flags-label {
         grid-column: 1 / -1;
-        justify-self: start !important;
+        justify-self: center !important;
         margin-bottom: 8px;
     }
     
@@ -1185,7 +1185,7 @@ ul {
         grid-template-columns: repeat(2, auto) !important;
         gap: 10px 15px !important;
         padding: 0 20px !important;
-        justify-content: start !important;
+        justify-content: center !important;
         justify-items: start !important;
         align-items: center !important;
     }
@@ -1193,7 +1193,7 @@ ul {
     .flags-label {
         font-size: 14px;
         grid-column: 1 / -1;
-        justify-self: start !important;
+        justify-self: center !important;
     }
     
     .flag-item {
