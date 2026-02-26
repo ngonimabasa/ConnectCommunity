@@ -5624,7 +5624,8 @@ ul {
     }
     
     .wide-photo-image {
-        min-height: 300px;
+        min-height: auto;
+        padding: 25px;
     }
     
     .wide-photo-image img {
@@ -5681,8 +5682,8 @@ ul {
     }
     
     .wide-photo-image {
-        min-height: 300px;
-        padding: 30px;
+        min-height: auto;
+        padding: 20px;
     }
     
     .wide-photo-image img {
@@ -5729,8 +5730,8 @@ ul {
     }
     
     .wide-photo-image {
-        min-height: 220px;
-        padding: 20px;
+        min-height: auto;
+        padding: 15px;
     }
     
     .wide-photo-image img {
