@@ -1151,25 +1151,27 @@ ul {
 /* Responsive flags */
 @media (max-width: 968px) {
     .flags-container {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 12px 20px;
-        padding: 0 30px;
-        justify-content: start;
-        align-items: center;
+        display: grid !important;
+        grid-template-columns: repeat(2, auto) !important;
+        gap: 12px 20px !important;
+        padding: 0 30px !important;
+        justify-content: start !important;
+        justify-items: start !important;
+        align-items: center !important;
     }
     
     .flags-label {
         grid-column: 1 / -1;
-        justify-self: start;
+        justify-self: start !important;
         margin-bottom: 8px;
     }
     
     .flag-item {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        min-width: 0;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        min-width: 0 !important;
+        justify-content: flex-start !important;
     }
 }
 
@@ -1179,29 +1181,32 @@ ul {
     }
     
     .flags-container {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 10px 15px;
-        padding: 0 20px;
-        justify-content: start;
-        align-items: center;
+        display: grid !important;
+        grid-template-columns: repeat(2, auto) !important;
+        gap: 10px 15px !important;
+        padding: 0 20px !important;
+        justify-content: start !important;
+        justify-items: start !important;
+        align-items: center !important;
     }
     
     .flags-label {
         font-size: 14px;
         grid-column: 1 / -1;
+        justify-self: start !important;
     }
     
     .flag-item {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        min-width: 0;
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        min-width: 0 !important;
+        justify-content: flex-start !important;
     }
     
     .flag-item img {
-        width: 32px;
-        height: 32px;
+        width: 32px !important;
+        height: 32px !important;
         flex-shrink: 0;
     }
     
