@@ -3231,6 +3231,16 @@ ul {
         background-color: #f3f4f6;
         color: #333333;
     }
+    
+    .nav-dropdown.active .dropdown-trigger {
+        background-color: #f3f4f6;
+        color: #333333;
+    }
+    
+    .dropdown-trigger.active {
+        background-color: #f3f4f6;
+        color: #333333;
+    }
 
     .dropdown-trigger::after {
         content: '▼';
