@@ -5004,17 +5004,19 @@ ul {
 
 .members-marquee {
     width: 100%;
+    max-width: none;
     overflow: hidden;
     margin-top: 60px;
     padding: 40px 0;
     position: relative;
-    background: transparent;
 }
 
 .members-track {
-    display: flex;
-    width: max-content;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 50px;
     animation: marquee 25s linear infinite;
+    will-change: transform;
 }
 
 .members-track:hover {
@@ -5022,17 +5024,17 @@ ul {
 }
 
 .member-item {
-    flex: 0 0 auto;
+    flex-shrink: 0;
     background: #ffffff;
     border-radius: 20px;
     padding: 40px 60px;
-    margin: 0 25px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
+    min-width: 280px;
+    height: 180px;
 }
 
 .member-item:hover {
@@ -5068,12 +5070,13 @@ ul {
 @media (max-width: 1024px) {
     .members-track {
         animation-duration: 20s;
+        gap: 40px;
     }
     
     .member-item {
         padding: 35px 50px;
-        margin: 0 20px;
-        min-height: 160px;
+        min-width: 250px;
+        height: 160px;
     }
     
     .member-logo {
@@ -5090,12 +5093,13 @@ ul {
     
     .members-track {
         animation-duration: 18s;
+        gap: 30px;
     }
     
     .member-item {
         padding: 30px 40px;
-        margin: 0 15px;
-        min-height: 140px;
+        min-width: 220px;
+        height: 140px;
     }
     
     .member-logo {
@@ -5107,12 +5111,13 @@ ul {
 @media (max-width: 480px) {
     .members-track {
         animation-duration: 15s;
+        gap: 25px;
     }
     
     .member-item {
         padding: 25px 35px;
-        margin: 0 12px;
-        min-height: 120px;
+        min-width: 200px;
+        height: 120px;
         border-radius: 15px;
     }
     
