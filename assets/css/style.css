@@ -1152,11 +1152,11 @@ ul {
 @media (max-width: 968px) {
     .flags-container {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 24px;
+        grid-template-columns: repeat(2, auto);
+        gap: 16px 30px;
         padding: 0 30px;
+        justify-content: center;
         align-items: center;
-        justify-items: center;
     }
     
     .flags-label {
@@ -1171,8 +1171,7 @@ ul {
         align-items: center;
         gap: 10px;
         min-width: 0;
-        width: auto;
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
@@ -1183,11 +1182,11 @@ ul {
     
     .flags-container {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 22px;
+        grid-template-columns: repeat(2, auto);
+        gap: 14px 25px;
         padding: 0 20px;
+        justify-content: center;
         align-items: center;
-        justify-items: center;
     }
     
     .flags-label {
@@ -1201,8 +1200,7 @@ ul {
         align-items: center;
         gap: 8px;
         min-width: 0;
-        width: auto;
-        justify-content: center;
+        justify-content: flex-start;
     }
     
     .flag-item img {
