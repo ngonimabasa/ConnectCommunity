@@ -5005,13 +5005,17 @@ ul {
     margin-top: 60px;
     padding: 40px 0;
     position: relative;
+    background: transparent;
 }
 
 .members-scroll-track {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 50px;
     animation: scroll-horizontal 30s linear infinite;
-    width: fit-content;
+    width: max-content;
+    align-items: center;
 }
 
 .members-scroll-track:hover {
@@ -5019,7 +5023,7 @@ ul {
 }
 
 .member-card {
-    flex-shrink: 0;
+    flex: 0 0 auto;
     background: #ffffff;
     border-radius: 20px;
     padding: 40px 50px;
@@ -5028,8 +5032,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 300px;
-    min-height: 180px;
+    width: 300px;
+    height: 180px;
 }
 
 .member-card:hover {
@@ -5039,6 +5043,7 @@ ul {
 
 .member-logo-wrapper {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5070,8 +5075,8 @@ ul {
 @media (max-width: 768px) {
     .member-card {
         padding: 30px 40px;
-        min-width: 250px;
-        min-height: 150px;
+        width: 250px;
+        height: 150px;
     }
     
     .member-logo {
@@ -5088,8 +5093,8 @@ ul {
 @media (max-width: 480px) {
     .member-card {
         padding: 25px 30px;
-        min-width: 200px;
-        min-height: 130px;
+        width: 200px;
+        height: 130px;
     }
     
     .member-logo {
