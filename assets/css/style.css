@@ -5597,21 +5597,30 @@ ul {
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .wide-photo-card {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         max-width: 900px;
     }
     
-    .wide-photo-card.reverse {
-        grid-template-columns: 1fr;
-    }
-    
-    .wide-photo-card.reverse .wide-photo-content,
-    .wide-photo-card.reverse .wide-photo-image {
-        order: 0;
+    .wide-photo-image {
+        order: 2;
     }
     
     .wide-photo-content {
+        order: 1;
         padding: 40px;
+    }
+    
+    .wide-photo-card.reverse {
+        flex-direction: column;
+    }
+    
+    .wide-photo-card.reverse .wide-photo-content {
+        order: 1;
+    }
+    
+    .wide-photo-card.reverse .wide-photo-image {
+        order: 2;
     }
     
     .wide-photo-image {
