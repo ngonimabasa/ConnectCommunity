@@ -5624,7 +5624,12 @@ ul {
     }
     
     .wide-photo-image {
-        min-height: 350px;
+        min-height: 300px;
+    }
+    
+    .wide-photo-image img {
+        max-width: 380px;
+        max-height: 320px;
     }
 }
 
@@ -5680,6 +5685,11 @@ ul {
         padding: 30px;
     }
     
+    .wide-photo-image img {
+        max-width: 100%;
+        max-height: 250px;
+    }
+    
     .story-title,
     .stats-title-light,
     .section-header-center h2 {
@@ -5710,6 +5720,26 @@ ul {
     
     .stat-number-light {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wide-photo-content {
+        padding: 25px 20px;
+    }
+    
+    .wide-photo-image {
+        min-height: 220px;
+        padding: 20px;
+    }
+    
+    .wide-photo-image img {
+        max-width: 100%;
+        max-height: 180px;
+    }
+    
+    .wide-photo-content h2 {
+        font-size: 1.125rem;
     }
 }
 
