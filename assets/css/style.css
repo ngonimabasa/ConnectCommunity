@@ -1152,8 +1152,9 @@ ul {
 @media (max-width: 968px) {
     .flags-container {
         grid-template-columns: 1fr 1fr;
-        gap: 20px 15px;
+        gap: 20px 20px;
         padding: 0 20px;
+        align-items: center;
     }
     
     .flags-label {
@@ -1166,6 +1167,7 @@ ul {
         width: 100%;
         max-width: none;
         justify-content: center;
+        justify-self: center;
     }
 }
 
@@ -1176,8 +1178,9 @@ ul {
     
     .flags-container {
         grid-template-columns: 1fr 1fr;
-        gap: 18px 12px;
+        gap: 20px 15px;
         padding: 0 15px;
+        align-items: center;
     }
     
     .flags-label {
@@ -1186,8 +1189,10 @@ ul {
     }
     
     .flag-item {
-        gap: 10px;
+        gap: 8px;
         justify-content: center;
+        justify-self: center;
+        align-items: center;
     }
     
     .flag-item img {
