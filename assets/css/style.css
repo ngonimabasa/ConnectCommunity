@@ -4998,6 +4998,102 @@ ul {
     background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/memberHero.jpg');
 }
 
+/* Members Grid Styles */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.member-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: float 6s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.member-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.member-card:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.member-card:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.member-card:nth-child(4) {
+    animation-delay: 4.5s;
+}
+
+.member-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 102, 179, 0.2);
+}
+
+.member-logo-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-logo {
+    max-width: 100%;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-logo {
+    transform: scale(1.1);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+    }
+    
+    .member-card {
+        padding: 30px;
+        min-height: 160px;
+    }
+    
+    .member-logo {
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
 .hero-getintouch {
     background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/getintouch-hero-bg.jpg');
 }
