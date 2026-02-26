@@ -3215,25 +3215,35 @@ ul {
     }
 
     .dropdown-trigger {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 10px 14px;
         width: 100%;
+        border-radius: 8px;
+        transition: background-color 0.2s ease;
+        font-size: 15px;
+        color: #1a1a1a;
+        text-shadow: none;
+        text-align: center;
         cursor: pointer;
         position: relative;
+    }
+    
+    .dropdown-trigger:hover {
+        background-color: #f3f4f6;
+        color: #333333;
     }
 
     .dropdown-trigger::after {
         content: '▼';
         font-size: 10px;
-        margin-left: 8px;
         transition: transform 0.3s ease;
         position: absolute;
         right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .nav-dropdown.active .dropdown-trigger::after {
-        transform: rotate(180deg);
+        transform: translateY(-50%) rotate(180deg);
     }
 
     .dropdown-menu {
@@ -3277,6 +3287,11 @@ ul {
     }
     
     .nav-menu .nav-link {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .dropdown-trigger {
         padding: 8px 12px;
         font-size: 14px;
     }
